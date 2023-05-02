@@ -67,3 +67,40 @@
     color: #ffffff;
     border: 1px solid;
   }
+
+  /* hero */
+
+.hero-view {
+    margin-top: 110px;
+  }
+  
+  .hero-content h1 {
+    line-height: 60px;
+  }
+  
+  .hero-content p {
+    color: #98A09C;
+    line-height: 38px;
+  }
+  
+  .btncek {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btncek:hover {
+    background-color: #EEFCF3;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  
+  .row hr {
+    margin: 60px auto;
+    border: none;
+    border-bottom: solid 5px #C9D9D2;
+    border-radius: 8px;
+  }

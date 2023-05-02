@@ -1,0 +1,75 @@
+
+:root {
+  --primary: #54bca4;
+  --font: #1a2c24;
+  --yellow: #f8d95f;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+//navbar
+.logonavbar{
+  width:"150"; 
+  height:"48":
+}
+.singkatan {
+  color: var(--primary);
+}
+.main-title {
+  color: var(--font);
+}
+.btnmasuk {
+  border-color: var(--primary);
+  color: var(--primary);
+  border-radius:32px
+}
+.btndaftar {
+  background-color: var(--primary);
+  color: white;
+  border-radius:32px
+}
+.btnmasuk:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+.btndaftar:hover {
+  background-color: #ffffff;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+.btncek {
+  padding: 0.5rem 2rem;
+  font-size: 1rem;
+  background-color: var(--primary);
+  text-decoration: none;
+  color: white;
+}
+.jstastitik {
+  color: var(--primary);
+}
+.labelartike {
+  color: var(--primary);
+}
+.linkaertikel {
+  color: var(--primary);
+}
+
+//cek stunting
+.main-title {
+  font-size: 44px;
+}
+footer {
+  background-color: #1b443b;
+}
+.footericons a {
+  font-size: 2rem;
+  color: white;
+}
+
+#cekstuntinghasil{
+  background-color:#EEFCF3;
+}
+.buttoncustom {
+  background-color:var(--primary);
+  color:white;
+}

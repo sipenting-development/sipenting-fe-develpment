@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--my css-->
+    <link rel="stylesheet" href="css/cekStunting.css" />
+    <link rel="stylesheet" href="css/daftarArtikel.css" />
+    <link rel="stylesheet" href="css/isiArtikel.css" />
+    <link rel="stylesheet" href="css/landingPage.css" />
+  </head>
+
+  <body>
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+      <div class="container">
+        <a class="navbar-brand" href="#"> <img src="img/navbar.png" alt="" width="150" height="48" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sipenting</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Layanan Kami</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Cek Stunting</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Artikel</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btnmasuk me-3">Masuk</a>
+            <a href="#" class="btn btndaftar">Daftar</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!--end navbar-->
+    <!--hero  cek stunting -->
+    <div class="hero-view" id="#hero">
+      <div class="text-center" id="hero">
+        <div class="container px-3 mt-5">
+          <div class="row mb-md-0 mb-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="text-center text-lg-start mt-5">
+                <img src="img/cekstunting.png" class="hero-img img-fluid" width="500" height="500 " />
+              </div>
+            </div>
+            <div class="col-lg-6 py-lg-5">
+              <div class="hero-content py-5">
+                <h1 class="text-lg-start fw-bold main-title">Yuk Coba <span class="singkatan">Cek Stunting</span></h1>
+                <p class="text-lg-start mt-lg-2 main-content fw-light">Pantau pertumbuhan dan perkembangan anak Anda secara berkala. Untuk mengetahui seberapa sehat anak Anda. Cek kondisi anak Anda bisa menggunakan layanan kami.</p>
+              </div>
+            </div>
+            <hr class="bg-white mt-sm-5 pt-sm-5" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end hero  cek stunting   -->
+
+    <!-- form cek stunting-->
+    <div class="container text-center mt-5">
+      <h3 class="fw-700 mt-7 mb-4">Masukan Data Antropometri Anak Anda</h3>
+    </div>
+    <form action="">
+      <div class="container">
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Nama Lengkap</label>
+              <input type="text" class="form-control ps-4 mb-3 border-2 b rounded-5" id="nama" name="nama" placeholder="Masukkan Nama" required />
+            </div>
+            <div class="form-group">
+              <label for="">Pilih Jenis Kelamin</label>
+              <select class="form-control ps-4 mb-3 border-2 rounded-5" id="jk" required>
+                <option value=" ">Jenis Kelamin :</option>
+                <option value="laki-laki ">Laki-laki</option>
+                <option value="perempuan ">Perempuan</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="">Berat Badan(kg)</label>
+              <input type="number" class="form-control ps-4 mb-3 border-2 rounded-5" id="bb" name="bb" placeholder="Masukkan Berat Badan " required />
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="">Tanggal Lahir</label>
+              <input type="date" class="form-control ps-4 mb-3 border-2 rounded-5" id="tl" name="tl" required />
+            </div>
+            <div class="form-group">
+              <label for="">Umur (bulan)</label>
+              <input type="number" class="form-control ps-4 mb-3 border-2 rounded-5" id="Umur" name="Umur" placeholder="Masukkan Umur" required />
+            </div>
+            <div class="form-group">
+              <label for="">Tinggi Badan</label>
+              <input type="number" class="form-control ps-4 mb-3 border-2 rounded-5" id="tinggi" name="tinggi" placeholder="Masukkan Tinggi" required />
+            </div>
+          </div>
+        </div>
+        <div class="mt-4 text-sm-center mb-5">
+          <button type="submit" class="btn px-5 py-2 text-center rounded-5 buttoncustom">Mulai Hitung</button>
+        </div>
+      </div>
+    </form>
+    <!--end  form cek stunting-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe " crossorigin="anonymous "></script>
+  </body>
+</html>

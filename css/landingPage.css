@@ -1,0 +1,69 @@
+:root {
+    font-family: "Poppins";
+    --primary: #54bca4;
+    --font: #1a2c24;
+    --yellow: #f8d95f;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    text-decoration:none;
+  }
+  
+  .singkatan {
+    color: var(--primary);
+  }
+  
+  .main-title {
+    color: var(--font);
+  }
+  
+  .offcanvas-body {
+    align-items: center;
+  }
+  
+  .nav-item {
+    padding-right: 40px;
+  }
+  
+  .nav-link active {
+    color: var(--primary);
+  }
+  
+  .nav-link {
+    color: #5f6d7e;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary);
+  }
+  
+  .btndaftar {
+    align-items: center;
+    border-color: var(--primary);
+    color: var(--primary);
+    border-radius: 32px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .btnmasuk {
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 32px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .btndaftar:hover {
+    background-color: #EEFCF3;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  
+  .btnmasuk:hover {
+    background-color: #A6DDCF;
+    color: #ffffff;
+    border: 1px solid;
+  }

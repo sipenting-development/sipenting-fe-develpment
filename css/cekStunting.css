@@ -18,25 +18,17 @@ body {
 .main-title {
   color: var(--font);
 }
-.btnmasuk {
+.masuk {
   border-color: var(--primary);
   color: var(--primary);
   border-radius:32px;
 }
-.btndaftar {
+.daftar {
   background-color: var(--primary);
   color: white;
   border-radius:32px;
 }
-.btnmasuk:hover {
-  background-color: var(--primary);
-  color: #ffffff;
-}
-.btndaftar:hover {
-  background-color: #ffffff;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-}
+.
 .btncek {
   padding: 0.5rem 2rem;
   font-size: 1rem;
@@ -73,4 +65,18 @@ footer {
   background-color:var(--primary);
   color:white;
 
+}
+.konseling {
+    background-color:var(--primary);
+  color:white;
+}
+.btncek{
+    background-color: var(--primary);
+    text-decoration: none;
+    color: white;
+  }
+.btn-custom{
+    background-color: var(--primary);
+    color:white;
+    
 }

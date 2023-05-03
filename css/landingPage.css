@@ -8,6 +8,7 @@
   body {
     font-family: "Poppins", sans-serif;
     text-decoration:none;
+    overflow-x: hidden;
   }
   
   .singkatan {
@@ -125,3 +126,11 @@
   .card-body img {
     margin-bottom: 8px;
   }
+
+  /* layanan kami */
+  
+  .carousel .carousel-indicators button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}

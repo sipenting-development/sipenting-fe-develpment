@@ -14,6 +14,31 @@ document.getElementById("cekstunting1").addEventListener("click", function () {
   const today = new Date();
   const umur_bulan = (today.getFullYear() - thn_lahir) * 12 + today.getMonth() - bln_lahir;
 
+  //pengecek jika nilai dari yang diinputkan kosong
+  if (!nama) {
+    alert("Nama tidak boleh kosong!");
+  }
+
+  if (!jk) {
+    alert("Jenis kelamin tidak boleh kosong!");
+  }
+
+  if (!bb) {
+    alert("Berat badan tidak boleh kosong!");
+  }
+
+  if (!tl) {
+    alert("Tanggal lahir tidak boleh kosong!");
+  }
+
+  if (!umur) {
+    alert("Umur tidak boleh kosong!");
+  }
+
+  if (!tinggi) {
+    alert("Tinggi tidak boleh kosong!");
+  }
+
   const zbb = Math.pow(bb / 6, 0.483);
   const tbu = 61.4 + 3.191 * umur + 0.025 * Math.pow(umur, 2);
   const ztb = (tinggi - tbu) / 4.083;
@@ -28,34 +53,30 @@ document.getElementById("cekstunting1").addEventListener("click", function () {
 
   let result = "";
   result =
-    "<h2 >" +
+    "<h2 style='text-align:center; font-weight:bold;' >" +
     " Hasil Perhitungan " +
     "</h2>" +
-    "<h3>" +
+    "<h3 style='margin :30px; padding:5px'; font-size:24px; >" +
     "Nama = " +
     nama +
     "</h3>" +
-    "<h3>" +
+    "<h3 style='margin :30px; padding:5px; font-size:24px;'>" +
     "Jenis Kelamin = " +
     jk +
     "</h3>" +
-    "<h3>" +
+    "<h3  style='margin :30px; padding:5px; font-size:24px'>" +
     "Berat Badan = " +
     bb +
     "</h3>" +
-    "<h3>" +
-    "Tanggal Lahir = " +
-    tl +
-    "</h3>" +
-    "<h3>" +
+    "<h3  style='margin :30px; padding:5px; font-size:24px'>" +
     "umur = " +
     umur +
     "</h3>" +
-    "<h3>" +
+    "<h3  style='margin :30px; padding:5px; font-size:24px'>" +
     "tinggi = " +
     tinggi +
     "</h3>" +
-    "<h3>" +
+    "<h3  style='margin :30px; padding:5px; font-size:24px; '>" +
     "Status = " +
     stunting +
     "</h3>";

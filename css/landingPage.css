@@ -135,3 +135,37 @@
     height: 10px;
   }
 
+  footer {
+    background-color: #1b443b;
+  }
+  .footericons a {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  #cekstuntinghasil{
+    background-color:#EEFCF3;
+  }
+  .buttoncustom {
+    background-color:var(--primary);
+    color:white;
+  
+  }
+  .konseling {
+      background-color:var(--primary);
+    color:white;
+  }
+  .btncek{
+      background-color: var(--primary);
+      text-decoration: none;
+      color: white;
+    }
+  .btn-custom{
+      background-color: var(--primary);
+      color:white;
+      
+  }
+  #result{
+    background-color:#EEFCF3;
+  }
+

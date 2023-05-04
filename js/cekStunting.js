@@ -165,3 +165,14 @@ document.getElementById("cekstunting1").addEventListener("click", function () {
 
 //   document.querySelector("#result").style.display = "block";
 // });
+
+fetch("https://644d30d8cfdddac9709f3a9d.mockapi.io/AYF/icons")
+  .then((response) => response.json())
+  .then((data) => {
+    const randomIndex = Math.floor(Math.random() * data.length);
+    const randomData = data[randomIndex];
+    const avatarUrl = randomData.avatar;
+    const img = document.querySelector(".img-wrapper");
+    img.src = avatarUrl;
+  })
+  .catch((error) => console.error(error));

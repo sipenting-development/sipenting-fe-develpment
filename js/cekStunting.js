@@ -151,18 +151,27 @@ document.getElementById("cekstunting1").addEventListener("click", function() {
     const umur = parseFloat(document.getElementById("umur").value);
     const tinggi = parseFloat(document.getElementById("tinggi").value);
 
+    if (tinggi <= 0 || bb <= 0) {
+        alert("input must be positive and not minus");
+        return;
+        //kenapa  penggunakan tostring kkarena fungsi length hanya dapat digunakan pada objek bertipe string.
+        //Kode yang Anda berikan menggunakan fungsi toString() untuk mengkonversi angka menjadi string sehingga dapat memeriksa panjang digit dari angka tersebut.
+    } else if (bb.toString().length > 3 || tinggi.toString().length > 3) {
+        alert("Input for maximum weight and height of 3 numbers.");
+        return;
+    }
+    let bmi = bb / Math.pow(tinggi / 100, 2);
+
     //  Hitung IMT (Indeks Massa Tubuh)
-    let imt = bb / Math.pow(tinggi / 100, 2);
-    let isNormal = imt >= 18.5 && imt < 25;
-    let hasil = " ";
-    if (imt < 18.5) {
-        hasil = "BB anak termasuk kurang";
-    } else if (isNormal) {
-        hasil = "BB anak termasuk normal";
-    } else if (imt >= 25 && imt < 30) {
-        hasil = "BB anak termasuk kelebihan";
+    let bmiCategory = "";
+    if (bmi < 18.5) {
+        bmiCategory = "Underweight";
+    } else if (bmi < 25) {
+        bmiCategory = "Normal Weight";
+    } else if (bmi < 30) {
+        bmiCategory = "Overweight";
     } else {
-        hasil = "BB anak termasuk obesitas";
+        bmiCategory = "Obesity";
     }
 
     let result = "";
@@ -193,7 +202,7 @@ document.getElementById("cekstunting1").addEventListener("click", function() {
         "</h3>" +
         "<h3>" +
         "Status = " +
-        hasil +
+        bmiCategory +
         "</h3>" +
         '<button type="button" id="reload" class="btn btn-danger p-2 text-center" style="display: block; margin: 0 auto;">Mulai cek lagi</button>';
     document.getElementById("result").innerHTML = result;

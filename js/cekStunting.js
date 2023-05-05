@@ -141,74 +141,185 @@
 // Kemudian, jika z-score tinggi badan (ztb) kurang dari -2 dan usia anak lebih dari atau sama dengan 24 bulan, maka anak dianggap mengalami stunting (stunting = "Ya"). Sebaliknya, jika z-score tinggi badan tidak kurang dari -2 atau usia anak kurang dari 24 bulan, maka anak dianggap tidak mengalami stunting (stunting = "Tidak"
 
 //imt
-document.getElementById("cekstunting1").addEventListener("click", function() {
-    event.preventDefault();
-    //console.log("cekstunting");
-    const nama = document.getElementById("nama").value;
-    const jk = document.getElementById("jk").value;
-    const bb = parseFloat(document.getElementById("bb").value);
-    const tl = new Date(document.getElementById("tl").value);
-    const umur = parseFloat(document.getElementById("umur").value);
-    const tinggi = parseFloat(document.getElementById("tinggi").value);
+document.getElementById("cekstunting1").addEventListener("click", function () {
+  event.preventDefault();
+  //console.log("cekstunting");
+  const nama = document.getElementById("nama").value;
+  const jk = document.getElementById("jk").value;
+  const bb = parseFloat(document.getElementById("bb").value);
+  const tl = new Date(document.getElementById("tl").value);
+  const umur = parseFloat(document.getElementById("umur").value);
+  const tinggi = parseFloat(document.getElementById("tinggi").value);
 
-    if (tinggi <= 0 || bb <= 0) {
-        alert("input must be positive and not minus");
-        return;
-        //kenapa  penggunakan tostring kkarena fungsi length hanya dapat digunakan pada objek bertipe string.
-        //Kode yang Anda berikan menggunakan fungsi toString() untuk mengkonversi angka menjadi string sehingga dapat memeriksa panjang digit dari angka tersebut.
-    } else if (bb.toString().length > 3 || tinggi.toString().length > 3) {
-        alert("Input for maximum weight and height of 3 numbers.");
-        return;
-    }
-    let bmi = bb / Math.pow(tinggi / 100, 2);
+  if (tinggi <= 0 || bb <= 0) {
+    alert("input must be positive and not minus");
+    return;
+    //kenapa  penggunakan tostring kkarena fungsi length hanya dapat digunakan pada objek bertipe string.
+    //Kode yang Anda berikan menggunakan fungsi toString() untuk mengkonversi angka menjadi string sehingga dapat memeriksa panjang digit dari angka tersebut.
+  } else if (bb.toString().length > 3 || tinggi.toString().length > 3) {
+    alert("Input for maximum weight and height of 3 numbers.");
+    return;
+  }
+  let bmi = bb / Math.pow(tinggi / 100, 2);
 
-    //  Hitung IMT (Indeks Massa Tubuh)
-    let bmiCategory = "";
-    if (bmi < 18.5) {
-        bmiCategory = "Underweight";
-    } else if (bmi < 25) {
-        bmiCategory = "Normal Weight";
-    } else if (bmi < 30) {
-        bmiCategory = "Overweight";
-    } else {
-        bmiCategory = "Obesity";
-    }
+  //  Hitung IMT (Indeks Massa Tubuh)
+  let bmiCategory = "";
+  if (umur <= 24) {
+    bmiCategory = "usia kurang dari 2 tahun, tidak dapat menentukan BMI";
+  } else if (bmi < 18.5) {
+    bmiCategory = "Underweight";
+  } else if (bmi < 25) {
+    bmiCategory = "Normal Weight";
+  } else if (bmi < 30) {
+    bmiCategory = "Overweight";
+  } else {
+    bmiCategory = "Obesity";
+  }
 
-    let result = "";
-    result =
-        "<h2 style='text-align:center; font-weight:bold;' >" +
-        " Hasil Perhitungan " +
-        "</h2>" +
-        "<h3 >" +
-        "Nama = " +
-        nama +
-        "</h3>" +
-        "<h3>" +
-        "Jenis Kelamin = " +
-        jk +
-        "</h3>" +
-        "<h3>" +
-        "Berat Badan = " +
-        bb +
-        "</h3>" +
-        "<h3>" +
-        "<h3>" +
-        "umur = " +
-        umur +
-        "</h3>" +
-        "<h3>" +
-        "tinggi = " +
-        tinggi +
-        "</h3>" +
-        "<h3>" +
-        "Status = " +
-        bmiCategory +
-        "</h3>" +
-        '<button type="button" id="reload" class="btn btn-danger p-2 text-center" style="display: block; margin: 0 auto;">Mulai cek lagi</button>';
-    document.getElementById("result").innerHTML = result;
-    document.getElementById("result").style.padding = "50px";
-    document.querySelector("#result").style.display = "block";
-    document.getElementById("reload").addEventListener("click", function() {
-        location.reload();
-    });
+  let result = "";
+  result =
+    "<h2 style='text-align:center; font-weight:bold;' >" +
+    " Hasil Perhitungan " +
+    "</h2>" +
+    "<h3 >" +
+    "Nama = " +
+    nama +
+    "</h3>" +
+    "<h3>" +
+    "Jenis Kelamin = " +
+    jk +
+    "</h3>" +
+    "<h3>" +
+    "Berat Badan = " +
+    bb +
+    "</h3>" +
+    "<h3>" +
+    "<h3>" +
+    "umur = " +
+    umur +
+    "</h3>" +
+    "<h3>" +
+    "tinggi = " +
+    tinggi +
+    "</h3>" +
+    "<h3>" +
+    "Status = " +
+    bmiCategory +
+    "</h3>" +
+    '<button type="button" id="reload" class="btn btn-danger p-2 text-center" style="display: block; margin: 0 auto;">Mulai cek lagi</button>';
+  document.getElementById("result").innerHTML = result;
+  document.getElementById("result").style.padding = "50px";
+  document.querySelector("#result").style.display = "block";
+  document.getElementById("reload").addEventListener("click", function () {
+    location.reload();
+  });
 });
+
+fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
+  .then((response) => response.json())
+  .then((data) => {
+    console.log(data);
+    for (i = 0; i < data.length; i++) {
+      temp = document.createElement("div");
+      temp.className = "results";
+      temp.innerHTML = '<div class="col-sm-6 col-lg-4 mb-4 shadow-sm">' + '<div class="mx-4">' + '<div class="img-wrapper">';
+      '<img class="img-fluid " src="' +
+        data[i]["gambar"] +
+        '"> ' +
+        "</div>" +
+        '<div class="labelartike text-start mt-3">' +
+        '<h5 class="fs-5">' +
+        data[i]["jenisArtikel"] +
+        "</h5>" +
+        "</div>" +
+        '<h4 class="fs-4">' +
+        data[i]["judulArtikel"] +
+        "</h4>" +
+        '<div class="news-content mt-2">' +
+        '<p class="card-text text-start fs-7">' +
+        data[i]["rangkuman"] +
+        "</p>" +
+        '<div class="text-end linkaertikel">';
+      '<a href="https://www.merdeka.com/peristiwa/bupati-banyuwangi-libatkan-perempuan-lawan-terorisme.html " class="btn fs-7">Selengkapnya</a>' + "</div>" + "</div>" + "</div>" + "</div>";
+      //       // // ' <div class="row mt-5 ">' +
+      //       // '<div class=" col-sm-6 col-lg-4 mb-4 shadow-sm">' +
+      //       // '<div class="mx-4">' +
+      //       // '<div class="img-wrapper>' +
+      //       // '<img class="d-block w-100" style="border-radius: 15px" alt="artikel1 " src="' +
+      //       // data[i]["gambar"] +
+      //       // '"> ' +
+      //       // '<div class="labelartikel1" style="color:#54bca4;">' +
+      //       // '<h5 class="fs-5">' +
+      //       // data[i]["jenisArtikel"] +
+      //       // "</h5>" +
+      //       // "</div>" +
+      //       // '<h4 class="card-title">' +
+      //       // data[i]["judulArtikel"] +
+      //       // "</h4>" +
+      //       // '<div class="news-content mt-2">' +
+      //       // ' <p class="card-text text-start fs-7">' +
+      //       // data[i]["rangkuman"] +
+      //       // "</p>" +
+      //       // +"</div>" +
+      //       // "</div>" +
+      //       // "</div>" +
+      //       // "</div>";
+      //       //'</div>';
+      //       // '<div class="card col-lg-12 ' +
+      //       // data[i]["jenisArtikel"] +
+      //       // '" >' +
+      //       // '<div class="row">' +
+      //       // '<div class="col-lg-5">' +
+      //       // '<div class="card-image ">' +
+      //       // '<img class="img-fluid " src="' +
+      //       // data[i]["gambar"] +
+      //       // '"> ' +
+      //       // "</div>" +
+      //       // "</div>" +
+      //       // '<div class="col-lg-7">' +
+      //       // '<div class="card-body">' +
+      //       // '<h4 class="text-warna jenis-artikel">' +
+      //       // data[i]["jenisArtikel"] +
+      //       // "</h4>" +
+      //       // '<h6 class="card-title">' +
+      //       // data[i]["judulArtikel"] +
+      //       // "</h6>" +
+      //       // '<p class="card-text">' +
+      //       // data[i]["rangkuman"] +
+      //       // "</p>" +
+      //       // "</div>" +
+      //       // '<div class="card-footer text-end">' +
+      //       // '<a href="#" style="text-decoration: none;"  class="text-warna card-link fw-semibold">Selengkapnyaa</a>' +
+      //       // "</div>" +
+      //       // "</div>" +
+      //       // "</div>" +
+
+      document.getElementsByClassName("arttikelro")[0].appendChild(temp);
+    }
+  });
+
+// const articleList = document.querySelector("#article-list");
+
+// fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
+//     .then(response => response.json())
+//     .then(data => {
+//         data.forEach(article => {
+//             const articleCard = `
+//           <div class="col-md-4">
+//             <div class="card mb-4 shadow-sm">
+//               <img src="${article.gambar}" class="card-img-top" alt="${article.judul}">
+//               <div class="card-body">
+//                 <h5 class="card-title">${article.jenisArtikel}</h5>
+//                 <h4 class="card-title">${article.judulArtikel}</h4>
+//                 <p class="card-text">${article.rangkuman}</p>
+//                 <div class="text-end linkaertikel">
+//                   <a href="${article.selengkapnya}" class="btn fs-7">Selengkapnya</a>
+//                 </div>
+//               </div>
+//             </div>
+//           </div>
+//         `;
+//             articleList.innerHTML += articleCard;
+//         });
+//     })
+//     .catch(error => console.log(error));

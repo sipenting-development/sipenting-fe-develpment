@@ -111,3 +111,12 @@ footer {
 #result {
   background-color: #eefcf3;
 }
+.card-img-top {
+  height: 300px; /* sesuaikan dengan tinggi gambar yang diinginkan */
+  object-fit: cover;
+}
+
+.card-body {
+  margin-bottom: 20px;
+  height: 300px; /* sesuaikan dengan tinggi isi card yang diinginkan */
+}

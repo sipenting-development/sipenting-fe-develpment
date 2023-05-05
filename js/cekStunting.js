@@ -215,111 +215,111 @@ document.getElementById("cekstunting1").addEventListener("click", function () {
   });
 });
 
+// fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
+//   .then((response) => response.json())
+//   .then((data) => {
+//     console.log(data);
+//     for (i = 0; i < data.length; i++) {
+//       temp = document.createElement("div");
+//       temp.className = "results";
+//       temp.innerHTML = '<div class="col-sm-6 col-lg-4 mb-4 shadow-sm">' + '<div class="mx-4">' + '<div class="img-wrapper">';
+//       '<img class="img-fluid " src="' +
+//         data[i]["gambar"] +
+//         '"> ' +
+//         "</div>" +
+//         '<div class="labelartike text-start mt-3">' +
+//         '<h5 class="fs-5">' +
+//         data[i]["jenisArtikel"] +
+//         "</h5>" +
+//         "</div>" +
+//         '<h4 class="fs-4">' +
+//         data[i]["judulArtikel"] +
+//         "</h4>" +
+//         '<div class="news-content mt-2">' +
+//         '<p class="card-text text-start fs-7">' +
+//         data[i]["rangkuman"] +
+//         "</p>" +
+//         '<div class="text-end linkaertikel">';
+//       '<a href="https://www.merdeka.com/peristiwa/bupati-banyuwangi-libatkan-perempuan-lawan-terorisme.html " class="btn fs-7">Selengkapnya</a>' + "</div>" + "</div>" + "</div>" + "</div>";
+//       //       // // ' <div class="row mt-5 ">' +
+//       //       // '<div class=" col-sm-6 col-lg-4 mb-4 shadow-sm">' +
+//       //       // '<div class="mx-4">' +
+//       //       // '<div class="img-wrapper>' +
+//       //       // '<img class="d-block w-100" style="border-radius: 15px" alt="artikel1 " src="' +
+//       //       // data[i]["gambar"] +
+//       //       // '"> ' +
+//       //       // '<div class="labelartikel1" style="color:#54bca4;">' +
+//       //       // '<h5 class="fs-5">' +
+//       //       // data[i]["jenisArtikel"] +
+//       //       // "</h5>" +
+//       //       // "</div>" +
+//       //       // '<h4 class="card-title">' +
+//       //       // data[i]["judulArtikel"] +
+//       //       // "</h4>" +
+//       //       // '<div class="news-content mt-2">' +
+//       //       // ' <p class="card-text text-start fs-7">' +
+//       //       // data[i]["rangkuman"] +
+//       //       // "</p>" +
+//       //       // +"</div>" +
+//       //       // "</div>" +
+//       //       // "</div>" +
+//       //       // "</div>";
+//       //       //'</div>';
+//       //       // '<div class="card col-lg-12 ' +
+//       //       // data[i]["jenisArtikel"] +
+//       //       // '" >' +
+//       //       // '<div class="row">' +
+//       //       // '<div class="col-lg-5">' +
+//       //       // '<div class="card-image ">' +
+//       //       // '<img class="img-fluid " src="' +
+//       //       // data[i]["gambar"] +
+//       //       // '"> ' +
+//       //       // "</div>" +
+//       //       // "</div>" +
+//       //       // '<div class="col-lg-7">' +
+//       //       // '<div class="card-body">' +
+//       //       // '<h4 class="text-warna jenis-artikel">' +
+//       //       // data[i]["jenisArtikel"] +
+//       //       // "</h4>" +
+//       //       // '<h6 class="card-title">' +
+//       //       // data[i]["judulArtikel"] +
+//       //       // "</h6>" +
+//       //       // '<p class="card-text">' +
+//       //       // data[i]["rangkuman"] +
+//       //       // "</p>" +
+//       //       // "</div>" +
+//       //       // '<div class="card-footer text-end">' +
+//       //       // '<a href="#" style="text-decoration: none;"  class="text-warna card-link fw-semibold">Selengkapnyaa</a>' +
+//       //       // "</div>" +
+//       //       // "</div>" +
+//       //       // "</div>" +
+
+//       document.getElementsByClassName("arttikelro")[0].appendChild(temp);
+//     }
+//   });
+
+const articleList = document.querySelector("#article-list");
+
 fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
   .then((response) => response.json())
   .then((data) => {
-    console.log(data);
-    for (i = 0; i < data.length; i++) {
-      temp = document.createElement("div");
-      temp.className = "results";
-      temp.innerHTML = '<div class="col-sm-6 col-lg-4 mb-4 shadow-sm">' + '<div class="mx-4">' + '<div class="img-wrapper">';
-      '<img class="img-fluid " src="' +
-        data[i]["gambar"] +
-        '"> ' +
-        "</div>" +
-        '<div class="labelartike text-start mt-3">' +
-        '<h5 class="fs-5">' +
-        data[i]["jenisArtikel"] +
-        "</h5>" +
-        "</div>" +
-        '<h4 class="fs-4">' +
-        data[i]["judulArtikel"] +
-        "</h4>" +
-        '<div class="news-content mt-2">' +
-        '<p class="card-text text-start fs-7">' +
-        data[i]["rangkuman"] +
-        "</p>" +
-        '<div class="text-end linkaertikel">';
-      '<a href="https://www.merdeka.com/peristiwa/bupati-banyuwangi-libatkan-perempuan-lawan-terorisme.html " class="btn fs-7">Selengkapnya</a>' + "</div>" + "</div>" + "</div>" + "</div>";
-      //       // // ' <div class="row mt-5 ">' +
-      //       // '<div class=" col-sm-6 col-lg-4 mb-4 shadow-sm">' +
-      //       // '<div class="mx-4">' +
-      //       // '<div class="img-wrapper>' +
-      //       // '<img class="d-block w-100" style="border-radius: 15px" alt="artikel1 " src="' +
-      //       // data[i]["gambar"] +
-      //       // '"> ' +
-      //       // '<div class="labelartikel1" style="color:#54bca4;">' +
-      //       // '<h5 class="fs-5">' +
-      //       // data[i]["jenisArtikel"] +
-      //       // "</h5>" +
-      //       // "</div>" +
-      //       // '<h4 class="card-title">' +
-      //       // data[i]["judulArtikel"] +
-      //       // "</h4>" +
-      //       // '<div class="news-content mt-2">' +
-      //       // ' <p class="card-text text-start fs-7">' +
-      //       // data[i]["rangkuman"] +
-      //       // "</p>" +
-      //       // +"</div>" +
-      //       // "</div>" +
-      //       // "</div>" +
-      //       // "</div>";
-      //       //'</div>';
-      //       // '<div class="card col-lg-12 ' +
-      //       // data[i]["jenisArtikel"] +
-      //       // '" >' +
-      //       // '<div class="row">' +
-      //       // '<div class="col-lg-5">' +
-      //       // '<div class="card-image ">' +
-      //       // '<img class="img-fluid " src="' +
-      //       // data[i]["gambar"] +
-      //       // '"> ' +
-      //       // "</div>" +
-      //       // "</div>" +
-      //       // '<div class="col-lg-7">' +
-      //       // '<div class="card-body">' +
-      //       // '<h4 class="text-warna jenis-artikel">' +
-      //       // data[i]["jenisArtikel"] +
-      //       // "</h4>" +
-      //       // '<h6 class="card-title">' +
-      //       // data[i]["judulArtikel"] +
-      //       // "</h6>" +
-      //       // '<p class="card-text">' +
-      //       // data[i]["rangkuman"] +
-      //       // "</p>" +
-      //       // "</div>" +
-      //       // '<div class="card-footer text-end">' +
-      //       // '<a href="#" style="text-decoration: none;"  class="text-warna card-link fw-semibold">Selengkapnyaa</a>' +
-      //       // "</div>" +
-      //       // "</div>" +
-      //       // "</div>" +
-
-      document.getElementsByClassName("arttikelro")[0].appendChild(temp);
-    }
-  });
-
-// const articleList = document.querySelector("#article-list");
-
-// fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
-//     .then(response => response.json())
-//     .then(data => {
-//         data.forEach(article => {
-//             const articleCard = `
-//           <div class="col-md-4">
-//             <div class="card mb-4 shadow-sm">
-//               <img src="${article.gambar}" class="card-img-top" alt="${article.judul}">
-//               <div class="card-body">
-//                 <h5 class="card-title">${article.jenisArtikel}</h5>
-//                 <h4 class="card-title">${article.judulArtikel}</h4>
-//                 <p class="card-text">${article.rangkuman}</p>
-//                 <div class="text-end linkaertikel">
-//                   <a href="${article.selengkapnya}" class="btn fs-7">Selengkapnya</a>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         `;
-//             articleList.innerHTML += articleCard;
-//         });
-//     })
-//     .catch(error => console.log(error));
+    data.forEach((article) => {
+      const articleCard = `
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm mb-md-5" ">
+              <img src="${article.gambar}" class="card-img-top" alt="${article.judul}">
+              <div class="card-body">
+                <h5 class="card-title">${article.jenisArtikel}</h5>
+                <h4 class="card-title">${article.judulArtikel}</h4>
+                <p class="card-text">${article.rangkuman}</p>
+                <div class="text-end linkaertikel">
+                  <a href="${article.selengkapnya}" class="btn fs-7">Selengkapnya</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        `;
+      articleList.innerHTML += articleCard;
+    });
+  })
+  .catch((error) => console.log(error));

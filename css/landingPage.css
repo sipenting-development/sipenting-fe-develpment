@@ -99,7 +99,7 @@
     border: 1px solid var(--primary);
   }
   
-  .row hr {
+  .hero .row hr {
     margin: 60px auto;
     border: none;
     border-bottom: solid 5px #C9D9D2;
@@ -167,5 +167,14 @@
   }
   #result{
     background-color:#EEFCF3;
+  }
+
+  /* footer */
+
+  .footercolo .row hr {
+    margin-top: 20px;
+    border: none;
+    border-bottom: solid 5px #C9D9D2;
+    border-radius: 8px;
   }
 

@@ -143,13 +143,13 @@
 //imt
 document.getElementById("cekstunting1").addEventListener("click", function() {
     event.preventDefault();
-    console.log("cekstunting");
+    //console.log("cekstunting");
     const nama = document.getElementById("nama").value;
     const jk = document.getElementById("jk").value;
-    const bb = parseInt(document.getElementById("bb").value);
+    const bb = parseFloat(document.getElementById("bb").value);
     const tl = new Date(document.getElementById("tl").value);
-    const umur = parseInt(document.getElementById("umur").value);
-    const tinggi = parseInt(document.getElementById("tinggi").value);
+    const umur = parseFloat(document.getElementById("umur").value);
+    const tinggi = parseFloat(document.getElementById("tinggi").value);
 
     //  Hitung IMT (Indeks Massa Tubuh)
     let imt = bb / Math.pow(tinggi / 100, 2);

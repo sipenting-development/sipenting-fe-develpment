@@ -40,6 +40,7 @@ fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/artikel')
         for (i = 0; i < data.length; i++) {
             temp = document.createElement('div');
             temp.className = 'results';
+
             temp.innerHTML =
                 '<div class="card col-lg-12 ' + data[i]["jenisArtikel"] + '" >' +
 

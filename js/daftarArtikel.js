@@ -1,16 +1,16 @@
-// fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/:endpoint')
+// fetch('https://berita-indo-api.vercel.app/v1/suara/health')
 //     .then((response) => response.json())
 //     .then((data) => {
 //         // console.log(data["data"]);
 //         for (i = 0; i < data["data"].length; i++) {
 //             temp = document.createElement('div');
 //             temp.className = 'results';
-//             temp.innerHTML = '<div class="card col-lg-12">' +
-
+//             temp.innerHTML =
+//                 '<div class="card col-lg-12">' +
 //                 '<div class="row">' +
 //                 '<div class="col-lg-5">' +
-//                 'div class="card-image">' +
-//                 '<img src="' + data["data"][i]["image"][0] + '" ' +
+//                 '<div class="card-image">' +
+//                 '<img class="img-fluid" src="' + data["data"][i]["image.large"] + '"> ' +
 //                 '</div>' +
 //                 '</div>' +
 
@@ -24,10 +24,14 @@
 //                 '<a href="#" style="text-decoration: none;"  class="text-warna card-link fw-semibold">Selengkapnyaa</a>' +
 //                 '</div>' +
 //                 '</div>' +
+//                 '</div>' +
+//                 '</div>' +
 
 //                 document.getElementsByClassName('artikel-list')[0].appendChild(temp);
 //         }
 //     });
+
+
 
 fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/artikel')
     .then((response) => response.json())
@@ -42,8 +46,8 @@ fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/artikel')
                 '<div class="row">' +
 
                 '<div class="col-lg-5">' +
-                'div class="card-image">' +
-                '<img src="' + data[i]["gambar"][0] + '" ' +
+                '<div class="card-image ">' +
+                '<img class="img-fluid " src="' + data[i]["gambar"] + '"> ' +
                 '</div>' +
                 '</div>' +
 
@@ -66,13 +70,4 @@ fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/artikel')
         }
     });
 
-// fetch('https://644d30d8cfdddac9709f3a9d.mockapi.io/AYF/icons')
-//     .then(response => response.json())
-//     .then(data => {
-//         const randomIndex = Math.floor(Math.random() * data.length);
-//         const randomData = data[randomIndex];
-//         const avatarUrl = randomData.avatar;
-//         const img = document.getElementById('avatar');
-//         img.src = avatarUrl;
-//     })
-//     .catch(error => console.error(error));
+// Path: js\daftarArtikel.js

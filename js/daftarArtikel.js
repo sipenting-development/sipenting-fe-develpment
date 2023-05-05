@@ -41,7 +41,7 @@ fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/artikel')
             temp = document.createElement('div');
             temp.className = 'results';
             temp.innerHTML =
-                '<div class="card col-lg-12">' +
+                '<div class="card col-lg-12 ' + data[i]["jenisArtikel"] + '" >' +
 
                 '<div class="row">' +
 
@@ -64,9 +64,9 @@ fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/artikel')
 
                 '</div>' +
 
-                '</div>' +
+                '</div>';
 
-                document.getElementsByClassName('artikel-list')[0].appendChild(temp);
+            document.getElementsByClassName('artikel-list')[0].appendChild(temp);
         }
     });
 

@@ -115,9 +115,9 @@ footer {
   border-radius: 16px;
 }
 
-.artikel {
+/* .artikel {
   margin-top: 100px;
-}
+} */
 
 .artikel-filter .button-group {
   margin-top: 80px;
@@ -142,10 +142,10 @@ footer {
   border: 1px solid var(--primary);
 }
 
-.artikel-list {
+/* .artikel-list {
   padding-top: 40px;
   padding-bottom: 40px;
-}
+} */
 
 .card {
   border: none;

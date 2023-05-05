@@ -58,7 +58,7 @@ fetch('https://64539f69c18adbbdfea29dd5.mockapi.io/artikel')
                 '<p class="card-text">' + data[i]["rangkuman"] + '</p>' +
                 '</div>' +
                 '<div class="card-footer text-end">' +
-                '<a href="#" style="text-decoration: none;"  class="text-warna card-link fw-semibold">Selengkapnyaa</a>' +
+                `<a href="isianArtikel.html?id=${data[i]["id"]}" style="text-decoration: none;"  class="text-warna card-link fw-semibold">Selengkapnyaa</a> ` +
                 '</div>' +
                 '</div>' +
 

@@ -1,263 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sipenting</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"  />
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <!--my css-->
-    <link rel="stylesheet" href="css/cekStunting.css" />
+    <!-- <link rel="stylesheet" href="css/cekStunting.css" />
     <link rel="stylesheet" href="css/daftarArtikel.css" />
-    <link rel="stylesheet" href="css/isiArtikel.css" />
+    <link rel="stylesheet" href="css/isiArtikel.css" /> -->
     <link rel="stylesheet" href="css/landingPage.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <!--navbar-->
     <section class="navbar">
-      <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
-        <div class="container">
-          <a class="navbar-brand" href="#"> <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png" alt="" width="150"/></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png" alt="" width="150" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png" alt="" width="150"></h5>
-              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png" alt="" width="150"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: #54BCA4; font-weight: bold;" href="#">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Layanan Kami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cek IMT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Artikel</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btndaftar me-3">Daftar</a>
+                        <a href="#" class="btn btnmasuk">Masuk</a>
+                    </div>
+                </div>
             </div>
-            <div class="offcanvas-body">
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" style="color: #54BCA4; font-weight: bold;" href="#">Beranda</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Layanan Kami</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Cek IMT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Artikel</a>
-                </li>
-              </ul>
-              <a href="#" class="btn btndaftar me-3">Daftar</a>
-              <a href="#" class="btn btnmasuk">Masuk</a>
-            </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
     </section>
     <!--end navbar-->
 
     <!--hero -->
     <section class="hero">
-      <div class="hero-view" id="#hero">
-        <div class="text-center" id="hero">
-          <div class="container px-3 mt-5">
-            <div class="row mb-md-0 mb-5">
-              <div class="col-lg-6 py-lg-5">
-                <div class="hero-content py-5">
-                  <h1 class="text-lg-start fw-bold main-title">SIPENTING <span class="singkatan">Sistem <br> Pencegahan
+        <div class="hero-view" id="#hero">
+            <div class="text-center" id="hero">
+                <div class="container px-3 mt-5">
+                    <div class="row mb-md-0 mb-5">
+                        <div class="col-lg-6 py-lg-5">
+                            <div class="hero-content py-5">
+                                <h1 class="text-lg-start fw-bold main-title">SIPENTING <span class="singkatan">Sistem <br> Pencegahan
                       Stunting</span></h1>
-                  <p class="text-lg-start mt-lg-2 main-content fs-5">SIPENTING merupakan layanan konsultasi stunting, cek
-                    stunting dan edukasi yang bertujuan untuk pencegahan stunting pada masyakarat Indonesia.</p>
-  
-                  <div class="mt-4 text-lg-start">
-                    <a href="#" class="btncek rounded-5"> Coba Cek Indeks Masa Tubuh</a>
-                  </div>
+                                <p class="text-lg-start mt-lg-2 main-content fs-5">SIPENTING merupakan layanan konsultasi stunting, cek stunting dan edukasi yang bertujuan untuk pencegahan stunting pada masyakarat Indonesia.</p>
+
+                                <div class="mt-4 text-lg-start">
+                                    <a href="#" class="btncek rounded-5"> Coba Cek Indeks Masa Tubuh</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="text-center text-lg-start mt-3">
+                                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/hero_e6ssza.png" class="hero-img img-fluid float-end" style="width: 80%;" />
+                            </div>
+                        </div>
+                        <hr />
+                    </div>
                 </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="text-center text-lg-start mt-3">
-                  <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/hero_e6ssza.png" class="hero-img img-fluid float-end" style="width: 80%;"/>
-                </div>
-              </div>
-              <hr />
             </div>
-          </div>
-        </div>
     </section>
     <!--end hero-->
 
     <!-- data -->
     <section class="data">
-      <div class="data-content py-5">
-        <h4 class="text-center sub-title">Data Stunting</h4>
-        <h2 class="text-center fw-bold main-title">Balita di Indonesia</h2>
-      </div>
-      <div class="row justify-content-center gap-5">
-        <div class="card text-center mb-3" style="width: 16rem;">
-          <div class="card-body">
-            <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/data1_cl2jy3.png" alt="" width="64px">
-            <h4 class="card-title fw-bold">24,4 %</h4>
-            <p class="card-text">Stunting Balita</p>
-            <p class="card-text">(SSGI, 2021)</p>
-          </div>
+        <div class="data-content py-5">
+            <h4 class="text-center sub-title">Data Stunting</h4>
+            <h2 class="text-center fw-bold main-title">Balita di Indonesia</h2>
         </div>
-        <div class="card text-center mb-3" style="width: 16rem;">
-          <div class="card-body">
-            <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/data2_ficqic.png" alt="" width="64px">
-            <h4 class="card-title fw-bold">7,1 %</h4>
-            <p class="card-text">Wasting Balita</p>
-            <p class="card-text">(SSGI, 2021)</p>
-          </div>
+        <div class="row justify-content-center gap-5">
+            <div class="card text-center mb-3" style="width: 16rem;">
+                <div class="card-body">
+                    <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/data1_cl2jy3.png" alt="" width="64px">
+                    <h4 class="card-title fw-bold">24,4 %</h4>
+                    <p class="card-text">Stunting Balita</p>
+                    <p class="card-text">(SSGI, 2021)</p>
+                </div>
+            </div>
+            <div class="card text-center mb-3" style="width: 16rem;">
+                <div class="card-body">
+                    <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/data2_ficqic.png" alt="" width="64px">
+                    <h4 class="card-title fw-bold">7,1 %</h4>
+                    <p class="card-text">Wasting Balita</p>
+                    <p class="card-text">(SSGI, 2021)</p>
+                </div>
+            </div>
+            <div class="card text-center mb-3" style="width: 16rem;">
+                <div class="card-body">
+                    <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/data3_kjhtnn.png" alt="" width="64px">
+                    <h4 class="card-title fw-bold">17,7 %</h4>
+                    <p class="card-text">Underweight</p>
+                    <p class="card-text">(SSGI, 2021)</p>
+                </div>
+            </div>
         </div>
-        <div class="card text-center mb-3" style="width: 16rem;">
-          <div class="card-body">
-            <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201270/Assets/data3_kjhtnn.png" alt="" width="64px">
-            <h4 class="card-title fw-bold">17,7 %</h4>
-            <p class="card-text">Underweight</p>
-            <p class="card-text">(SSGI, 2021)</p>
-          </div>
-        </div>
-      </div>
     </section>
     <!-- end data -->
 
     <!-- layanan kami -->
     <section class="layanan-kami" style="background-color: #EEFCF3;">
-      <div class="data-content py-5">
-        <h2 class="text-center fw-bold main-title mt-2">Layanan Kami</h2>
-      </div>
-      <div id="carouselExampleInterval"class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
+        <div class="data-content py-5">
+            <h2 class="text-center fw-bold main-title mt-2">Layanan Kami</h2>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="10000">
-            <div class="row ps-5 ms-sm-5 align-items-center">
-              <div class="col-sm-5 pb-5 ms-sm-5 text-center text-lg-start mt-6">
-                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/layanan_dbrgnp.png" alt="" width="400" height="400" class="img-fluid" />
-              </div>
-              <div class="col-sm-5 text-center pb-4 me-4 mb-5">
-                <h5 class="fw-semibold" style="color: #54bca4;">Edukasi</h5>
-                <p style="color: #1B443B;">Edukasi tentang stunting sangat penting untuk meningkatkan kesadaran masyarakat akan kondisi ini dan mencegah terjadinya stunting pada anak-anak.</p>
-              </div>
+        <div id="carouselExampleInterval" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></button>
             </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="2000 ">
-            <div class="row ps-5 ms-sm-5 align-items-center">
-              <div class="col-sm-5 pb-5 ms-sm-5 text-center text-lg-start mt-6">
-                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/layanan2_ka0pkx.png" alt="" width="400" height="400" class="img-fluid" />
-              </div>
-              <div class="col-sm-5 text-center pb-4 me-4 mb-5">
-                <h5 class="fw-semibold" style="color: #54bca4;">Konsultasi</h5>
-                <p style="color: #1B443B;">Konsultasi stunting memberikan informasi yang sangat berharga tentang stunting dan anak dengan dokter yang berpengalaman.</p>
-              </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <div class="row ps-5 ms-sm-5 align-items-center">
+                        <div class="col-sm-5 pb-5 ms-sm-5 text-center text-lg-start mt-6">
+                            <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/layanan_dbrgnp.png" alt="" width="400" height="400" class="img-fluid" />
+                        </div>
+                        <div class="col-sm-5 text-center pb-4 me-4 mb-5">
+                            <h5 class="fw-semibold" style="color: #54bca4;">Edukasi</h5>
+                            <p style="color: #1B443B;">Edukasi tentang stunting sangat penting untuk meningkatkan kesadaran masyarakat akan kondisi ini dan mencegah terjadinya stunting pada anak-anak.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="2000 ">
+                    <div class="row ps-5 ms-sm-5 align-items-center">
+                        <div class="col-sm-5 pb-5 ms-sm-5 text-center text-lg-start mt-6">
+                            <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/layanan2_ka0pkx.png" alt="" width="400" height="400" class="img-fluid" />
+                        </div>
+                        <div class="col-sm-5 text-center pb-4 me-4 mb-5">
+                            <h5 class="fw-semibold" style="color: #54bca4;">Konsultasi</h5>
+                            <p style="color: #1B443B;">Konsultasi stunting memberikan informasi yang sangat berharga tentang stunting dan anak dengan dokter yang berpengalaman.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row ps-5 ms-sm-5 align-items-center">
+                        <div class="col-sm-5 pb-5 ms-sm-5 text-center text-lg-start mt-6">
+                            <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/layanan3_qdb3zq.png" alt="" width="400" height="400" class="img-fluid" />
+                        </div>
+                        <div class="col-sm-5 text-center pb-4 me-4 mb-5">
+                            <h5 class="fw-semibold" style="color: #54bca4;">Cek Stunting</h5>
+                            <p style="color: #1B443B;">Melalui pengecekan, dapat mengetahui apakah pertumbuhan anak optimal atau tidak. Melalui pengecekan stunting pada website kami.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <div class="row ps-5 ms-sm-5 align-items-center">
-              <div class="col-sm-5 pb-5 ms-sm-5 text-center text-lg-start mt-6">
-                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201271/Assets/layanan3_qdb3zq.png" alt="" width="400" height="400" class="img-fluid" />
-              </div>
-              <div class="col-sm-5 text-center pb-4 me-4 mb-5">
-                <h5 class="fw-semibold" style="color: #54bca4;">Cek Stunting</h5>
-                <p style="color: #1B443B;">Melalui pengecekan, dapat mengetahui apakah pertumbuhan anak optimal atau tidak. Melalui pengecekan stunting pada website kami.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+        </div>
     </section>
     <!-- end layanan kami -->
 
     <!--artikel-->
     <section class="artikel">
-      <div class="container text-start">
-        <h3 class="fw-bold ms-3 mt-7 mb-4 pt-5 fs-3">Artikel Terkait</h3>
-        <div class="container ">
-            <div class="row mt-5 mb-md-5 artikelro" id="article-list"></div>
+        <div class="container text-start">
+            <h3 class="fw-bold ms-3 mt-7 mb-4 pt-5 fs-3">Artikel Terkait</h3>
+            <div class="container ">
+                <div class="row mt-5 mb-md-5 artikelro" id="article-list"></div>
+            </div>
         </div>
-      </div>
     </section>
-  <!--end artikel-->
+    <!--end artikel-->
 
-  <!--footer-->
-  <footer class="footercolo px-md-0 px-3">
-    <div class="container">
-        <div class="row pt-5 pb-5 d-flex justify-content-around">
-            <div class="col-md-4 col-lg-3">
-                <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/white-logo_oh7nw5.png" width="180 " alt=" " />
-                <p class="fw-medium text-white mt-4 fs-6">Cegah stunting itu penting bersama SIPENTING. #SayNoToStunting</p>
-                <div class="d-flex justify-content ms-auto footericons">
-                    <a href="# " class="me-3 text-decoration-none">
-                        <i class="bi bi-facebook fs-2"></i>
-                    </a>
-                    <a href="# " class="me-3 text-decoration-none">
-                        <i class="bi bi-instagram fs-2"></i>
-                    </a>
-                    <a href="# " class="text-decoration-none">
-                        <i class="bi bi-whatsapp fs-2"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="col-md-4 col-lg-3 mt-4 mt-md-0 ffotermenu">
-                <div>
-                    <h5 class="text-white fw-bold fs-5">Halaman Menu</h5>
-
-                    <div class="fw-medium text-white">
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Beranda </a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Cek Stunting </a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Layanan Kami</a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Masuk</a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Daftar </a>
+    <!--footer-->
+    <footer class="footercolo px-md-0 px-3">
+        <div class="container">
+            <div class="row pt-5 pb-5 d-flex justify-content-around">
+                <div class="col-md-4 col-lg-3">
+                    <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/white-logo_oh7nw5.png" width="180 " alt=" " />
+                    <p class="fw-medium text-white mt-4 fs-6">Cegah stunting itu penting bersama SIPENTING. #SayNoToStunting</p>
+                    <div class="d-flex justify-content ms-auto footericons">
+                        <a href="# " class="me-3 text-decoration-none">
+                            <i class="bi bi-facebook fs-2"></i>
+                        </a>
+                        <a href="# " class="me-3 text-decoration-none">
+                            <i class="bi bi-instagram fs-2"></i>
+                        </a>
+                        <a href="# " class="text-decoration-none">
+                            <i class="bi bi-whatsapp fs-2"></i>
+                        </a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
-                <div>
-                    <h5 class="text-white fw-bold fs-5">Layanan</h5>
+                <div class="col-md-4 col-lg-3 mt-4 mt-md-0 ffotermenu">
+                    <div>
+                        <h5 class="text-white fw-bold fs-5">Halaman Menu</h5>
 
-                    <div class="fw-medium text-white">
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Konsultasi</a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Cek IMT</a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Artikel</a>
+                        <div class="fw-medium text-white">
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Beranda </a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Cek Stunting </a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Layanan Kami</a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Masuk</a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Daftar </a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
-                <div>
-                    <h5 class="text-white fw-bold fs-5">Kontak Kami</h5>
+                <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+                    <div>
+                        <h5 class="text-white fw-bold fs-5">Layanan</h5>
 
-                    <div class="fw-medium text-white">
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href="/#home "><i class="bi bi-envelope fs-3"></i> halo@sipenting.net </a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href="/#pengaduan "> <i class="bi bi-telephone fs-3"></i> +6289955000233 (cs)</a>
-                        <a class="d-block text-white mb-3 text-decoration-none fs-6" href="/#pengaduan "> <i class="bi bi-geo-alt fs-3"></i> Jl. Bahagia No. 20 B, Bandung, Jawa Barat 40238</a>
+                        <div class="fw-medium text-white">
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Konsultasi</a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Cek IMT</a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Artikel</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <hr />
-            <div class="row mt-3 d-flex justify-content">
-                <div class="col-lg-4 fs-6 fw-medium text-white fs-7">© 2023 SIPENTING Teams All rights reserved</div>
-                <div class="col-lg-3 fs-6 fw-medium text-white ms-auto fs-7">Syarat & Ketentuan</div>
-                <div class="col-lg-3 fs-6 fw-medium text-white ms-auto fs-7">Kebijakan Privasi</div>
+                <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+                    <div>
+                        <h5 class="text-white fw-bold fs-5">Kontak Kami</h5>
+
+                        <div class="fw-medium text-white">
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href="/#home "><i class="bi bi-envelope fs-3"></i> halo@sipenting.net </a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href="/#pengaduan "> <i class="bi bi-telephone fs-3"></i> +6289955000233 (cs)</a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href="/#pengaduan "> <i class="bi bi-geo-alt fs-3"></i> Jl. Bahagia No. 20 B, Bandung, Jawa Barat 40238</a>
+                        </div>
+                    </div>
+                </div>
+                <hr />
+                <div class="row mt-3 d-flex justify-content">
+                    <div class="col-lg-4 fs-6 fw-medium text-white fs-7">© 2023 SIPENTING Teams All rights reserved</div>
+                    <div class="col-lg-3 fs-6 fw-medium text-white ms-auto fs-7">Syarat & Ketentuan</div>
+                    <div class="col-lg-3 fs-6 fw-medium text-white ms-auto fs-7">Kebijakan Privasi</div>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
-<!--end footer-->
+    </footer>
+    <!--end footer-->
 
-<script src="js/index.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
+
 </html>

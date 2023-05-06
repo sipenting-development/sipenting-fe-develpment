@@ -1,0 +1,172 @@
+:root {
+    font-family: "Poppins";
+    --primary: #54bca4;
+    --font: #1a2c24;
+    --yellow: #f8d95f;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    text-decoration:none;
+    overflow-x: hidden;
+  }
+  
+  .singkatan {
+    color: var(--primary);
+  }
+  
+  .main-title {
+    color: var(--font);
+  }
+  
+  .offcanvas-body {
+    align-items: center;
+  }
+  
+  .nav-item {
+    padding-right: 40px;
+  }
+  
+  .nav-link active {
+    color: var(--primary);
+  }
+  
+  .nav-link {
+    color: #5f6d7e;
+  }
+  
+  .nav-link:hover {
+    color: var(--primary);
+  }
+  
+  .btndaftar {
+    align-items: center;
+    border-color: var(--primary);
+    color: var(--primary);
+    border-radius: 32px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .btnmasuk {
+    align-items: center;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 32px;
+    padding: 10px 20px;
+    font-weight: bold;
+  }
+  
+  .btndaftar:hover {
+    background-color: #EEFCF3;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  
+  .btnmasuk:hover {
+    background-color: #A6DDCF;
+    color: #ffffff;
+    border: 1px solid;
+  }
+
+  /* hero */
+
+.hero-view {
+    margin-top: 110px;
+  }
+  
+  .hero-content h1 {
+    line-height: 60px;
+  }
+  
+  .hero-content p {
+    color: #98A09C;
+    line-height: 38px;
+  }
+  
+  .btncek {
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--primary);
+    text-decoration: none;
+    color: white;
+  }
+  
+  .btncek:hover {
+    background-color: #EEFCF3;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+  }
+  
+  .hero .row hr {
+    margin: 60px auto;
+    border: none;
+    border-bottom: solid 5px #C9D9D2;
+    border-radius: 8px;
+  }
+
+  /* data */
+
+.data {
+    margin-bottom: 100px;
+  }
+  
+  .data-content .sub-title {
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  
+  .data .card {
+    border-width: 4px;
+    border-color: var(--primary);
+    border-radius: 16px;
+  }
+  
+  .data .card-body img {
+    margin-bottom: 8px;
+  }
+
+  /* layanan kami */
+  
+  .carousel .carousel-indicators button {
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+  }
+
+  /* artikel */
+  .card-img-top {
+    height: 300px; /* sesuaikan dengan tinggi gambar yang diinginkan */
+    object-fit: cover;
+  }
+  
+  .card-body .artikel {
+    margin-bottom: 20px;
+    height: 300px; /* sesuaikan dengan tinggi isi card yang diinginkan */
+  }
+  
+  .jenis-artikel {
+    color: var(--primary);
+  }
+  .selengkapnya {
+    color: var(--primary);
+  }
+
+  /* footer */
+
+  .footercolo {
+    background-color: #1b443b;
+  }
+  .footericons a {
+    font-size: 2rem;
+    color: white;
+  }
+
+  .footercolo .row hr {
+    margin-top: 20px;
+    border: none;
+    border-bottom: solid 5px #C9D9D2;
+    border-radius: 8px;
+  }
+

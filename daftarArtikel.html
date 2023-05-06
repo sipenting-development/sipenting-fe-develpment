@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200&family=Inter:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,700;0,800;1,100;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--my css-->
+    <link rel="stylesheet" href="css/daftarArtikel.css" />
+  </head>
+
+  <body>
+    <!--navbar-->
+    <section class="navbar">
+      <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"> <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png" alt="" width="150" /></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png" alt="" width="150" /></h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Beranda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Layanan Kami</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="pageCekStunting.html">Cek IMT</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" style="color: #54bca4; font-weight: bold" href="daftarArtikel.html">Artikel</a>
+                </li>
+              </ul>
+              <a href="#" class="btn btndaftar me-3">Daftar</a>
+              <a href="#" class="btn btnmasuk">Masuk</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--end navbar-->
+    <!--hero  list artikel -->
+    <div class="hero-artikel">
+      <div class="container px-3 mt-5">
+        <div class="row mb-md-0 mb-5 align-items-center">
+          <div class="col-lg-4 py-lg-5 hero-artikel-content">
+            <div class="py-5">
+              <h5 class="text-lg-start fw-bold text-warna">Dampak</h5>
+              <h1 class="text-lg-start main-title judul-list-artikel">Dampak Stunting Untuk Anak Kini dan Nanti</h1>
+              <p class="text-lg-start main-content fw-light hero-artikel-deskripsi">
+                Stunting adalah penyakit yang disebabkan oleh kekurangan gizi kronis pada masa awal kehidupan anak. Risiko dari masalah stunting terbilang wajib diwaspadai karena akan mempengaruhi tumbuh kembang anak
+              </p>
+
+              <a class="text-lg-start fw-bold text-warna" style="text-decoration: none" href="http://127.0.0.1:5503/isianArtikel.html?id=3">Selengkapnya</a>
+            </div>
+          </div>
+          <div class="col-lg-8 hero-artikel-image">
+            <div class="text-center text-lg-center mt-5">
+              <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683354904/dampak-stunting-anak_ycp7bt.jpg" class="hero-img img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end hero list artiikel   -->
+
+    <!-- artikel card-->
+    <div class="container artikel mt-5">
+      <div class="row">
+        <div class="col text-center">
+          <h1 class="fw-700">Artikel Terbaru</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="artikel-list my-5">
+          <!-- <div class="card col-lg-12">
+                    <div class="row ">
+
+                        <div class="col-lg-5">
+                            <div class="card-image">
+                                <img class="float-center img-fluid"
+                                    src="https://res.cloudinary.com/diptxmzhz/image/upload/v1682956697/Tugas%20Web/file-20200428-110734-15e14wl_snsebc.avif">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-7">
+                            <div class="card-body">
+                                <h4 class="text-warna jenis-artikel">Pencegahan</h4>
+                                <h6 class="card-title">Memahami Stunting pada Anak</h6>
+                                <p class="card-text text-justify">Stunting pada anak merupakan kondisi gagal tumbuh yang
+                                    diakibatkan oleh kekurangan gizi kronis. Stunting pada anak tidak boleh dianggap
+                                    sepele.
+                                    Jika tidak diatasi, kondisi ini dapat menjadi masalah. </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="#" style="text-decoration: none;"
+                                    class="text-warna card-link fw-semibold">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+          <!-- <div class="card col-lg-12">
+                    <div class="row ">
+                        <div class="col-lg-5">
+                            <div class="card-image">
+                                <img
+                                    src="https://res.cloudinary.com/diptxmzhz/image/upload/v1682956697/Tugas%20Web/file-20200428-110734-15e14wl_snsebc.avif">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-body">
+                                <h4 class="text-warna jenis-artikel">Pencegahan</h4>
+                                <h6 class="card-title">Memahami Stunting pada Anak</h6>
+                                <p class="card-text text-justify">Stunting pada anak merupakan kondisi gagal tumbuh yang
+                                    diakibatkan oleh kekurangan gizi kronis. Stunting pada anak tidak boleh dianggap
+                                    sepele.
+                                    Jika tidak diatasi, kondisi ini dapat menjadi masalah. </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="#" style="text-decoration: none;"
+                                    class="text-warna card-link fw-semibold">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card col-lg-12">
+                    <div class="row ">
+                        <div class="col-lg-5">
+                            <div class="card-image">
+                                <img
+                                    src="https://res.cloudinary.com/diptxmzhz/image/upload/v1682956697/Tugas%20Web/file-20200428-110734-15e14wl_snsebc.avif">
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="card-body">
+                                <h4 class="text-warna jenis-artikel">Pencegahan</h4>
+                                <h6 class="card-title">Memahami Stunting pada Anak</h6>
+                                <p class="card-text text-justify">Stunting pada anak merupakan kondisi gagal tumbuh yang
+                                    diakibatkan oleh kekurangan gizi kronis. Stunting pada anak tidak boleh dianggap
+                                    sepele.
+                                    Jika tidak diatasi, kondisi ini dapat menjadi masalah. </p>
+                            </div>
+                            <div class="card-footer text-end">
+                                <a href="#" style="text-decoration: none;"
+                                    class="text-warna card-link fw-semibold">Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 -->
+        </div>
+      </div>
+    </div>
+
+    <!-- end artikel card-->
+
+    <!--footer-->
+    <footer class="footercolo px-md-0 px-3">
+      <div class="container">
+        <div class="row pt-5 pb-5 d-flex justify-content-around">
+          <div class="col-md-4 col-lg-3">
+            <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/white-logo_oh7nw5.png" width="180 " alt=" " />
+            <p class="fw-medium text-white mt-4 fs-8">Cegah stunting itu penting bersama SIPENTING. #SayNoToStunting</p>
+            <div class="d-flex justify-content ms-auto footericons">
+              <a href="#" class="me-3 text-decoration-none">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="me-3 text-decoration-none">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="text-decoration-none">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 mt-4 mt-md-0 ffotermenu">
+            <div>
+              <h5 class="text-white fw-bold fs-5">Halaman Menu</h5>
+
+              <div class="fw-medium text-white">
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Beranda </a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Cek Stunting </a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Layanan Kami</a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Masuk</a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Daftar </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+            <div>
+              <h5 class="text-white fw-bold">Layanan</h5>
+
+              <div class="fw-medium text-white">
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Konsultasi</a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Cek IMT</a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="">Artikel</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-3 mt-4 mt-md-0">
+            <div>
+              <h5 class="text-white fw-bold">Kontak Kami</h5>
+
+              <div class="fw-medium text-white">
+                <a class="d-block text-white mb-3 text-decoration-none" href="/#home"><i class="bi bi-envelope"></i> halo@sipenting.net </a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="/#pengaduan"> <i class="bi bi-telephone"></i> +6289955000233 (cs)</a>
+                <a class="d-block text-white mb-3 text-decoration-none" href="/#pengaduan"> <i class="bi bi-geo-alt"></i> Jl. Bahagia No. 20 B, Bandung, Jawa Barat 40238</a>
+              </div>
+            </div>
+          </div>
+          <hr class="bg-white mt-sm-1 pt-sm-1" />
+          <div class="row mt-3 d-flex justify-conten">
+            <div class="col-lg-4 fs-6 fw-medium text-white">© 2023 SIPENTING Teams All rights reserved</div>
+            <div class="col-lg-3 fs-6 fw-medium text-white ms-auto">Syarat & Ketentuan</div>
+            <div class="col-lg-3 fs-6 fw-medium text-white ms-auto">Kebijakan Privasi</div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--akhir footer-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js " integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe " crossorigin="anonymous "></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <script src="js/daftarArtikel.js" type="text/javascript"></script>
+  </body>
+</html>

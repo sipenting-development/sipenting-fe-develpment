@@ -1,0 +1,132 @@
+:root {
+  --primary: #54bca4;
+  --font: #1a2c24;
+  --yellow: #f8d95f;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  overflow-x: hidden;
+}
+
+.singkatan {
+  color: var(--primary);
+}
+
+.main-title {
+  color: var(--font);
+}
+
+.offcanvas-body {
+  align-items: center;
+}
+
+.nav-item {
+  padding-right: 40px;
+}
+
+.nav-link active {
+  color: var(--primary);
+}
+
+.nav-link {
+  color: #5f6d7e;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.btndaftar {
+  align-items: center;
+  border-color: var(--primary);
+  color: var(--primary);
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.btnmasuk {
+  align-items: center;
+  background-color: var(--primary);
+  color: white;
+  border-radius: 32px;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.btndaftar:hover {
+  background-color: #eefcf3;
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btnmasuk:hover {
+  background-color: #a6ddcf;
+  color: #ffffff;
+  border: 1px solid;
+}
+.jstastitik {
+  color: var(--primary);
+}
+.labelartike {
+  color: var(--primary);
+}
+.linkaertikel {
+  color: var(--primary);
+}
+
+//cek stunting
+.main-title {
+  font-size: 44px;
+}
+.main-content {
+  color: #98a09c;
+}
+footer {
+  background-color: #1b443b;
+}
+.footericons a {
+  font-size: 2rem;
+  color: white;
+}
+
+#cekstuntinghasil {
+  background-color: #eefcf3;
+}
+.buttoncustom {
+  background-color: var(--primary);
+  color: white;
+}
+.konseling {
+  background-color: var(--primary);
+  color: white;
+}
+.btncek {
+  background-color: var(--primary);
+  text-decoration: none;
+  color: white;
+}
+.btn-custom {
+  background-color: var(--primary);
+  color: white;
+}
+#result {
+  background-color: #eefcf3;
+}
+.card-img-top {
+  height: 300px; /* sesuaikan dengan tinggi gambar yang diinginkan */
+  object-fit: cover;
+}
+
+.card-body {
+  margin-bottom: 20px;
+  height: 300px; /* sesuaikan dengan tinggi isi card yang diinginkan */
+}
+
+.jenis-artikel {
+  color: var(--primary);
+}
+.selengkapnya {
+  color: var(--primary);
+}

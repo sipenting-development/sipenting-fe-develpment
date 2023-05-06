@@ -313,7 +313,7 @@ fetch("https://64539f69c18adbbdfea29dd5.mockapi.io/artikel")
                 <h4 class="card-title ">${article.judulArtikel}</h4>
                 <p class="card-text">${article.rangkuman}</p>
                 <div class="text-end linkaertikel">
-                  <a href="${article.selengkapnya}" class="btn fs-5 selengkapnya fw-semibold">Selengkapnya</a>
+                  <a href="isianArtikel.html?id=${article.id}" class="btn fs-5 selengkapnya fw-semibold">Selengkapnya</a>
                 </div>
               </div>
             </div>

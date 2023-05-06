@@ -120,3 +120,10 @@ footer {
   margin-bottom: 20px;
   height: 300px; /* sesuaikan dengan tinggi isi card yang diinginkan */
 }
+
+.jenis-artikel {
+  color: var(--primary);
+}
+.selengkapnya {
+  color: var(--primary);
+}

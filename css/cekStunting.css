@@ -80,6 +80,9 @@ body {
 .main-title {
   font-size: 44px;
 }
+.main-content {
+  color: #98a09c;
+}
 footer {
   background-color: #1b443b;
 }

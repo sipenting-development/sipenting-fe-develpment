@@ -80,6 +80,9 @@ body {
 .main-title {
   font-size: 44px;
 }
+.main-content {
+  color: #98a09c;
+}
 footer {
   background-color: #1b443b;
 }
@@ -110,4 +113,20 @@ footer {
 }
 #result {
   background-color: #eefcf3;
+}
+.card-img-top {
+  height: 300px; /* sesuaikan dengan tinggi gambar yang diinginkan */
+  object-fit: cover;
+}
+
+.card-body {
+  margin-bottom: 20px;
+  height: 300px; /* sesuaikan dengan tinggi isi card yang diinginkan */
+}
+
+.jenis-artikel {
+  color: var(--primary);
+}
+.selengkapnya {
+  color: var(--primary);
 }

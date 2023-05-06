@@ -13,8 +13,8 @@
   font-size: 18px;
 }
 
-.icon-artikel a {
-  font-size: 2rem;
+.icon-artikel a i {
+  font-size: 48px;
   color: #263238;
 }
 
@@ -32,9 +32,7 @@
 
 /* ---------------------------- card artikel ----------------------------  */
 
-#result {
-  background-color: #eefcf3;
-}
+/* artikel */
 .card-img-top {
   height: 300px; /* sesuaikan dengan tinggi gambar yang diinginkan */
   object-fit: cover;

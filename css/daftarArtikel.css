@@ -106,6 +106,7 @@ footer {
 .hero-artikel-deskripsi {
   font-size: 20px;
   margin-top: 12px;
+  color: #98a09c;
 }
 
 .hero-artikel-image img {
@@ -115,33 +116,10 @@ footer {
   border-radius: 16px;
 }
 
-.artikel-filter .button-group {
-  margin-top: 80px;
-  gap: 50px;
-}
-
-.artikel-filter button {
-  align-items: center;
-  background-color: white;
-  border-radius: 32px;
-  padding: 12px 16px;
-  font-size: 18px;
-  width: 200px;
-  height: 50px;
-  color: var(--primary);
-  border: solid 1px var(--primary);
-}
-
-.artikel-filter button:hover {
-  background-color: #eefcf3;
-  color: var(--primary);
-  border: 1px solid var(--primary);
-}
-
 .card {
   border: none;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .card-image {
@@ -174,6 +152,7 @@ footer {
   font-size: 20px;
   margin-top: 12px;
   text-align: justify;
+  color: #98a09c;
 }
 
 .card-body .card-link {
@@ -185,26 +164,4 @@ footer {
   background-color: white;
   border: none;
   font-size: 18px;
-}
-
-.pagination {
-  gap: 30px;
-  margin-bottom: 100px;
-}
-
-.pagination .page-link {
-  background-color: white;
-  border: solid 1px var(--primary);
-  color: var(--primary);
-  border-radius: 8px;
-  font-size: 24px;
-  padding: 12px;
-  width: 60px;
-  height: 60px;
-}
-
-.pagination .page-link:hover {
-  background-color: #eefcf3;
-  color: var(--primary);
-  border: 1px solid var(--primary);
 }

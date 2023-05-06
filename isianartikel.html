@@ -16,7 +16,7 @@
         rel="stylesheet" />
     <!--my css-->
     <link rel="stylesheet" href="css/cekStunting.css" />
-    <link rel="stylesheet" href="css/daftarArtikel.css" />
+    <!-- <link rel="stylesheet" href="css/daftarArtikel.css" /> -->
     <link rel="stylesheet" href="css/isiArtikel.css" />
     <link rel="stylesheet" href="css/landingPage.css" />
     <link rel="stylesheet" href="css/isianArtikel.css" />
@@ -45,17 +45,17 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav ms-auto">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" style="color: #54bca4; font-weight: bold"
-                                    href="#">Beranda</a>
+                                <a class="nav-link" href="#">Beranda</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Layanan Kami</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Cek Stunting</a>
+                                <a class="nav-link" href="#">Cek IMT</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Artikel</a>
+                                <a class="nav-link active" aria-current="page" style="color: #54bca4; font-weight: bold"
+                                    href="#">Artikel</a>
                             </li>
                         </ul>
                         <a href="#" class="btn btndaftar me-3">Daftar</a>
@@ -162,76 +162,16 @@
     </div>
 
     <!--artikel-->
-    <!-- <div class="container text-start mb-lg-5">
-        <h3 class="fw-bold ms-3 mt-7 mb-4 pt-5 fs-3">Artikel Terkait</h3>
-        <div class="row mt-5">
-            <div class="col-sm-6 col-lg-4 mb-4 shadow-sm">
-                <div class="mx-4">
-                    <div class="img-wrapper">
-                        <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201275/Assets/artikel1_uen7rw.png"
-                            class="d-block w-100" style="border-radius: 15px" alt="artikel1 " />
-                    </div>
-                    <div class="labelartike text-start mt-3">
-                        <h5 class="fs-5">Konseling</h5>
-                    </div>
-                    <div class="news-content mt-2">
-                        <p class="card-text text-start fs-7">Stunting pada anak kondisi gagal tumbuh yang diakibatkan
-                            oleh kekurangan gizi kronis.</p>
-                        <div class="text-end linkaertikel">
-                            <a href="https://www.merdeka.com/peristiwa/bupati-banyuwangi-libatkan-perempuan-lawan-terorisme.html "
-                                class="btn fs-7">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <div class="mx-4">
-                    <div class="img-wrapper">
-                        <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/artikel2_j9o5xh.png"
-                            class="d-block w-100" style="border-radius: 15px" alt="artikel2 " />
-                    </div>
-                    <div class="labelartike text-start mt-3">
-                        <h5 class="fs-5">Makanan Bergizi</h5>
-                    </div>
-                    <div class="news-content mt-2">
-                        <p class="card-text text-start fs-7">Stunting terjadi ketika anak mengalami gangguan tumbuh
-                            kembang yang dialami</p>
-                        <div class="text-end linkaertikel">
-                            <a href="https://news.detik.com/berita-jawa-timur/d-5518807/bupati-banyuwangi-perempuan-pelaku-terorisme-bukan-bentuk-kesetaraan-gender?single=1 "
-                                class="btn fs-7">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6 col-lg-4 mb-4">
-                <div class="mx-4">
-                    <div class="img-wrapper">
-                        <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/artikel3_xyburm.png "
-                            class="d-block w-100" style="border-radius: 15px" alt="artikel3 " />
-                    </div>
-                    <div class="labelartike text-start mt-3">
-                        <h5 class="fs-5">Konseling</h5>
-                    </div>
-                    <div class="news-content mt-2">
-                        <p class="card-text text-start fs-7">Pencegahan stunting pada anak dengan memenuhi gizi pada
-                            masa pertumbuhan</p>
-                        <div class="text-end linkaertikel">
-                            <a href="https://nasional.tempo.co/read/1448618/lp3es-catat-peran-perempuan-dalam-jaringan-terorisme-meningkat "
-                                class="btn fs-7">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
+
+
+    <section class="artikel">
+        <div class="container text-start">
+            <h3 class="fw-bold ms-3 mt-7 mb-4 pt-5 fs-3">Artikel Terkait</h3>
+            <div class="container ">
+                <div class="row mt-5 mb-md-5 artikelro" id="article-list"></div>
             </div>
         </div>
-    </div> -->
-
-    <div class="container text-start">
-        <h3 class="fw-bold ms-3 mt-7 mb-4 pt-5 fs-3">Artikel Terkait</h3>
-        <div class="container h-100 ">
-            <div class="row mt-5 mb-md-5 artikelro h-100" id="article-list"></div>
-        </div>
-    </div>
-
+    </section>
 
 
     <!--end artikel-->
@@ -282,7 +222,7 @@
 
                         <div class="fw-medium text-white">
                             <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Konsultasi</a>
-                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Cek Stunting</a>
+                            <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Cek IMT</a>
                             <a class="d-block text-white mb-3 text-decoration-none fs-6" href=" ">Artikel</a>
                         </div>
                     </div>

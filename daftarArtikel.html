@@ -20,40 +20,47 @@
 
 <body>
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
-        <div class="container logonavbar">
-            <a class="navbar-brand" href="#"> <img src="img/navbar.png" alt="logonavbar" width="150" height="48" /></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Sipenting</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#">Beranda</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Layanan Kami</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Cek Stunting</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Artikel</a>
-                        </li>
-                    </ul>
-                    <a href="#" class="btn btnmasuk me-3">Masuk</a>
-                    <a href="#" class="btn btndaftar">Daftar</a>
+    <section class="navbar">
+        <nav class="navbar navbar-expand-lg bg-white fixed-top shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#"> <img
+                        src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png"
+                        alt="" width="150" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img
+                                src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201272/Assets/navbar_bfjxem.png"
+                                alt="" width="150" /></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Beranda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Layanan Kami</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Cek IMT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" style="color: #54bca4; font-weight: bold"
+                                    href="#">Artikel</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="btn btndaftar me-3">Daftar</a>
+                        <a href="#" class="btn btnmasuk">Masuk</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </section>
     <!--end navbar-->
     <!--hero  list artikel -->
     <div class="hero-artikel">
@@ -61,22 +68,20 @@
             <div class="row mb-md-0 mb-5 align-items-center">
                 <div class="col-lg-4 py-lg-5 hero-artikel-content">
                     <div class="py-5">
-                        <h5 class="text-lg-start fw-bold text-warna">Stunting</h5>
-                        <h1 class="text-lg-start main-title judul-list-artikel">Ramai Dibahas dan Disosor, Kenapa
-                            Stunting Jadi
-                            Isu </h1>
-                        <p class="text-lg-start main-content fw-light hero-artikel-deskripsi ">Stunting telah
-                            lama menjadi isu
-                            prioritas nasional, setelah Badan Kesehatan Dunia (WHO) menetapkan Indonesia sebagai
-                            negara dengan status gizi buruk.</p>
+                        <h5 class="text-lg-start fw-bold text-warna">Dampak</h5>
+                        <h1 class="text-lg-start main-title judul-list-artikel">Dampak Stunting Untuk Anak Kini dan
+                            Nanti </h1>
+                        <p class="text-lg-start main-content fw-light hero-artikel-deskripsi ">Stunting adalah penyakit
+                            yang disebabkan oleh kekurangan gizi kronis pada masa awal kehidupan anak. Risiko dari
+                            masalah stunting terbilang wajib diwaspadai karena akan mempengaruhi tumbuh kembang anak</p>
 
                         <a class="text-lg-start fw-bold text-warna" style="text-decoration:none"
-                            href="">Selengkapnya</a>
+                            href="http://127.0.0.1:5503/isianArtikel.html?id=3">Selengkapnya</a>
                     </div>
                 </div>
                 <div class="col-lg-8 hero-artikel-image">
                     <div class="text-center text-lg-center mt-5">
-                        <img src="https://res.cloudinary.com/diptxmzhz/image/upload/v1682949665/Tugas%20Web/3524889778_srfozu.jpg"
+                        <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683354904/dampak-stunting-anak_ycp7bt.jpg"
                             class="hero-img img-fluid" />
                     </div>
                 </div>
@@ -85,7 +90,7 @@
     </div>
     <!--end hero list artiikel   -->
 
-    <!-- form cek stunting-->
+    <!-- artikel card-->
     <div class="container artikel mt-5">
 
         <div class="row">
@@ -93,16 +98,6 @@
                 <h1 class="fw-700">Artikel Terbaru</h1>
             </div>
         </div>
-
-        <div class="row artikel-filter justify-content-around gap-2 mt-5 button-group filter-button-group">
-            <button type="button" data-filter="*" class="">Semua</button>
-            <button type="button" data-filter=".stunting" class="">Stunting</button>
-            <button type="button" data-filter=".pencegahan" class="">Pencegahan</button>
-            <button type="button" data-filter=".gizi" class="">Gizi</button>
-            <button type="button" data-filter=".dampak" class="">Dampak</button>
-            <button type="button" data-filter=".tips" class="">Tips</button>
-        </div>
-
         <div class="row">
             <div class="artikel-list my-5">
 
@@ -186,23 +181,16 @@
             </div>
         </div>
     </div>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination justify-content-center text-center">
-            <li><a class="page-link" href="#">1</a></li>
-            <li><a class="page-link" href="#">2</a></li>
-            <li><a class="page-link" href="#">3</a></li>
-        </ul>
-    </nav>
 
-
-    <!--end cek stunting-->
+    <!-- end artikel card-->
 
     <!--footer-->
     <footer class="footercolo px-md-0 px-3">
         <div class="container">
             <div class="row pt-5 pb-5 d-flex justify-content-around">
                 <div class="col-md-4 col-lg-3">
-                    <img src="" width="200" alt="" />
+                    <img src="https://res.cloudinary.com/damsz0xlx/image/upload/v1683201273/Assets/white-logo_oh7nw5.png"
+                        width="180 " alt=" " />
                     <p class="fw-medium text-white mt-4 fs-8">Cegah stunting itu penting bersama SIPENTING.
                         #SayNoToStunting</p>
                     <div class="d-flex justify-content ms-auto footericons">
@@ -236,7 +224,7 @@
 
                         <div class="fw-medium text-white">
                             <a class="d-block text-white mb-3 text-decoration-none" href="">Konsultasi</a>
-                            <a class="d-block text-white mb-3 text-decoration-none" href="">Cek Stunting</a>
+                            <a class="d-block text-white mb-3 text-decoration-none" href="">Cek IMT</a>
                             <a class="d-block text-white mb-3 text-decoration-none" href="">Artikel</a>
                         </div>
                     </div>

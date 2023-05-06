@@ -1,6 +1,6 @@
 .hero-image img {
   width: 100%;
-  height: 500px;
+  height: 600px;
   object-fit: cover;
 }
 
@@ -10,9 +10,44 @@
 
 .text-justify {
   text-align: justify;
+  font-size: 18px;
 }
 
 .icon-artikel a {
   font-size: 2rem;
   color: #263238;
+}
+
+.isi-artikel .jenis-artikel {
+  font-size: 24px;
+}
+
+.isi-artikel .judul-artikel {
+  font-size: 44px;
+}
+
+.isi-artikel .tinjauan {
+  font-size: 24px;
+}
+
+/* ---------------------------- card artikel ----------------------------  */
+
+#result {
+  background-color: #eefcf3;
+}
+.card-img-top {
+  height: 300px; /* sesuaikan dengan tinggi gambar yang diinginkan */
+  object-fit: cover;
+}
+
+.card-body .artikel {
+  margin-bottom: 20px;
+  height: 300px; /* sesuaikan dengan tinggi isi card yang diinginkan */
+}
+
+.jenis-artikel-card {
+  color: var(--primary);
+}
+.selengkapnya {
+  color: var(--primary);
 }
